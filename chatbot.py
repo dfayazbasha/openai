@@ -3,10 +3,11 @@ import openai
 openai.api_key = "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"
 
 def chat_with_ai(prompt):
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",  # Change model if needed
-        messages=[{"role": "user", "content": prompt}]
-    )
+   response = openai.ChatCompletion.chat(
+    model="gpt-3.5-turbo",
+    messages=[{"role": "user", "content": "Hello"}]
+)
+
     return response["choices"][0]["message"]["content"]
 
 print("Welcome to AI Chatbot! Type 'exit' to quit.")
