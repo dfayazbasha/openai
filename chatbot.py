@@ -8,7 +8,7 @@ def chat_with_ai(prompt):
     messages=[{"role": "user", "content": "Hello"}]
 )
 
-    return response["choices"][0]["message"]["content"]
+return response["choices"][0]["message"]["content"]
 
 print("Welcome to AI Chatbot! Type 'exit' to quit.")
 while True:
