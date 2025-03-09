@@ -1,7 +1,7 @@
 import openai  
 
 # Replace 'your-api-key' with your actual OpenAI API key
-OPENAI_API_KEY = "chatbot.p"
+OPENAI_API_KEY = "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"
 
 def chatbot_response(user_input):
     try:
